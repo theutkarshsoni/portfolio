@@ -1,0 +1,31 @@
+  body{
+  	font-family: 'Raleway', sans-serif;
+  }
+  .nav-item{
+  	margin: auto 50px;
+  }
+  .title-box{
+  	padding: 20px;
+  	margin-bottom: 20px;
+  	text-align: center;
+  }
+  .title-box h3 span{
+  	color: #3498DB;
+  }
+  .skill-box{
+  	padding: 10px;
+  	margin: 5px;
+  	background-color: #3498DB;
+  	color: white;
+  }
+  .work-box{
+  	border: 1px solid #3498DB;
+  	padding: 10px;
+  }
+  .social-icon{
+  	margin: auto 10px;
+  	color: black;
+  }
+  .social-icon:hover{
+  	color: #3498DB;
+  }
