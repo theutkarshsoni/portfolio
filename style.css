@@ -13,7 +13,7 @@
   	color: #3498DB;
   }
   .skill-box{
-  	padding: 10px;
+  	padding: 7px;
   	margin: 5px;
   	background-color: #3498DB;
   	color: white;
@@ -21,6 +21,25 @@
   .work-box{
   	border: 1px solid #3498DB;
   	padding: 10px;
+  }
+  ul.achievement-list li {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: font-size 0.5s ease 0s, background-color 0.5s ease 0s;
+  }
+  ul.achievement-list li:hover {
+    font-size: 20px;
+    background: #3498DB;
+    color: #fff;
+  }
+  ul.achievement-list li:last-child {
+    border: none;
+  }
+  .view_button{
+    background-color: #3498DB;
+    border-color: #3498DB;
   }
   .social-icon{
   	margin: auto 10px;
