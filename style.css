@@ -36,11 +36,8 @@
       filter:"alpha(opacity=100)";
       -ms-filter:"alpha(opacity=100)";
   }
-  .button-box{
-    padding: 10px; 
-  }
-  .button-box .btn-outline-primary,.btn-outline-secondary{
-    margin-right: 1.5rem;
+  .btn{
+    width: 100%;
   }
   .title-box{
   	padding: 20px;
