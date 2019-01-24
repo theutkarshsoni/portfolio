@@ -1,0 +1,104 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 span{
+  color: #3498DB;
+}
+
+#scroll {
+  position:fixed;
+  right:1rem;
+  bottom:1rem;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#3498DB;
+  display:none;
+  border-radius:50px;
+  z-index: 1;
+}
+
+#scroll i {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left: -7px;
+  margin-top: -9px;
+  color: #fff;
+}
+
+#scroll:hover {
+  background-color:#E74C3C;
+}
+
+.title-box{
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.title-box h2 span{
+	color: #3498DB;
+}
+
+.skill-box{
+	padding: 0.5rem;
+	background-color: #3498DB;
+	color: white;
+}
+
+.work-box{
+	border: 1px solid #3498DB;
+	padding: 1rem;
+}
+
+ul.achievement-list li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  transition: font-size 0.5s ease 0s, background-color 0.5s ease 0s;
+}
+
+ul.achievement-list li:hover {
+  font-size: 20px;
+  background: #3498DB;
+  color: #fff;
+}
+
+ul.achievement-list li:last-child {
+  border: none;
+}
+
+.card-img-top{
+  height: 250px;
+  opacity: 0.25;
+  transition: opacity 0.5s ease 0s;
+}
+
+.card-img-top:hover{
+  opacity: 0.75;
+}
+
+.view-button{
+  background-color: #3498DB;
+  border-color: #3498DB;
+}
+
+.contact-link{
+  -webkit-transition-duration: 0.5s;
+}
+
+.contact-link:hover{
+  -webkit-transform: scale(1.25);
+}
+
+.social-icon{
+	color: #000;
+  transition: color 0.5s ease 0s;
+}
+
+.social-icon:hover{
+	color: #3498DB;
+}
