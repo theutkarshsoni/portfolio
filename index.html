@@ -203,6 +203,33 @@
 			<p><i class="fa fa-map-marker pr-2"></i> Chennai, Tamilnadu, India </p>
 		</div>
 	</div>
+	<form method="post" action="sendMsg.php">
+		<div class="row form-group"> 
+			<div class="col-md-8 col-12">
+				<input type="text" name="cname" id="name" class="form-control" placeholder="Name" required minlength="4" maxlength="25" pattern="^[a-zA-Z _\.]*$">
+			</div>
+		</div>
+		<div class="row form-group"> 
+			<div class="col-md-8 col-12">
+				<input type="email" name="cemail" id="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+			</div>
+		</div>
+		<div class="row form-group"> 
+			<div class="col-md-8 col-12">
+				<input type="text" name="csubject" id="subject" class="form-control" placeholder="Suject" required minlength="4" maxlength="25" pattern="^[a-zA-Z _]*$">
+			</div>
+		</div>
+		<div class="row form-group"> 
+			<div class="col-md-8 col-12">
+				<textarea rows="5" class="form-control" name="cquery" id="query" placeholder="Message" required minlength="25" maxlength="70"></textarea>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-12">
+				<button type="submit" class="custom-button">Submit</button>
+			</div>
+		</div>
+	</form>
 </div>
 
 <div class="jumbotron mb-0 text-center rounded-0">
