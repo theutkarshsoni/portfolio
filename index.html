@@ -10,36 +10,29 @@
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <div class="jumbotron text-center mb-0 rounded-0">
   <h1>Hello, I'm <span>Utkarsh Soni</span>.</h1>
-  <p class="font-italic">I'm Front End Web Developer.</p> 
+  <h4>I'm a front end web developer.</h4> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-none d-sm-block sticky-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item ml-5 mr-5">
-        <a class="nav-link" href="#about">ABOUT</a>
-      </li>
-      <li class="nav-item ml-5 mr-5">
-        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-      </li>
-      <li class="nav-item ml-5 mr-5">
-        <a class="nav-link" href="#contact">CONTACT</a>
-      </li>    
+    <ul class="navbar-nav justify-content-center">
+		<li class="nav-item ml-5 mr-5">
+			<a class="nav-link" href="#about">ABOUT</a>
+		</li>
+		<li class="nav-item ml-5 mr-5">
+			<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+		</li>
+		<li class="nav-item ml-5 mr-5">
+			<a class="nav-link" href="#contact">CONTACT</a>
+		</li>    
     </ul>
-  </div>  
 </nav>
 
-<a href="#" id="scroll"><i class="fas fa-chevron-up"></i></a>
-
 <div class="container-fluid mt-4 d-block d-sm-none">
-	<div class="row">
+	<div class="row text-center">
 		<div class="col-4">
 			<a href="#about" class="btn btn-outline-primary">About</a>
 		</div>
@@ -52,6 +45,8 @@
 	</div>
 </div>
 
+<a href="#" id="scroll"><i class="fas fa-chevron-up"></i></a>
+
 <div class="container mt-5" id="about">
 	<div class="title-box">
 		<h2><span>About</span> Me</h2>
@@ -62,7 +57,6 @@
 		</div>
 		<div class="col-md-6">
 			<div class="text-right">
-				<h3>Utkarsh Soni</h3>
 				<p class="font-italic">Born on 22 Dec. 1996</p>
 				<h5>I'm pursuing B. Tech degree in Computer Science and Engineering from SRM Institute of Science and Technology, Chennai, Tamilnadu, India. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences in elegant way.</h5>
 				<p class="font-italic">Let's create imagination.</p>
@@ -73,7 +67,6 @@
 						<div class="skill-box ml-2 mb-2 shadow">HTML</div>
 						<div class="skill-box ml-2 mb-2 shadow">CSS</div>
 						<div class="skill-box ml-2 mb-2 shadow">JS</div>
-						<div class="skill-box ml-2 mb-2 shadow">jQuery</div>
 					</div>
 				</div>
 				<div class="row float-right">
@@ -153,33 +146,47 @@
 	<div class="title-box">
 		<h2>Initiated <span>Projects</span></h2>
 	</div>
+	<div class="row text-center">
+		<div class="col-6 col-sm-3 mb-5">
+			<a class="category-button active" data-filter="all">All</a>
+		</div>
+		<div class="col-6 col-sm-3 mb-5">
+			<a class="category-button" data-filter="bootstrap">Bootstrap</a>
+		</div>
+		<div class="col-6 col-sm-3 mb-5">
+			<a class="category-button" data-filter="php">PHP</a>
+		</div>
+		<div class="col-6 col-sm-3 mb-5">
+			<a class="category-button" data-filter="angular">Angular</a>
+		</div>
+	</div>
 	<div class="row">
-		<div class="col-xs-12 col-sm-4">
-			<div class="card mb-4">
+		<div class="col-xs-12 col-sm-4 all bootstrap">
+			<div class="card rounded-0 shadow mb-4">
 			  <img class="card-img-top" src="img/fin.png" alt="Card image">
 			  <div class="card-body">
-			    <h4 class="card-title text-center">friendINneed </h4>
-			    <p class="card-text text-justify">friendINneed is a college project. We developed a web application for blood donation and information about blood around the city.</p>
+			    <h4 class="card-title text-center">friend IN need </h4>
+			    <p class="card-text text-justify">friendINneed is a college project. We developed a web application for information about blood donation, availability and donors  around the city.</p>
 			    <a href="http://friendinneed.ga" target="_blank" class="btn btn-block btn-primary font-italic view-button">View it!</a>
 			  </div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="card mb-4">
+		<div class="col-xs-12 col-sm-4 all php">
+			<div class="card rounded-0 shadow mb-4">
 			  <img class="card-img-top" src="img/rast.png" alt="Card image">
 			  <div class="card-body">
 			    <h4 class="card-title text-center">RAST</h4>
-			    <p class="card-text text-justify">Robotics and Scalability Technology (RAST) is a local startup of Gurgoan. It's a product based company usally robots and crawlers. I did web development.</p>
+			    <p class="card-text text-justify">Robotics and Scalability Technology (RAST) is a local startup of Gurgoan. It's a product based company usally robots and crawlers.</p>
 			    <a href="https://www.rast.in" target="_blank" class="btn btn-block btn-primary font-italic view-button">View it!</a>
 			  </div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="card mb-4">
+		<div class="col-xs-12 col-sm-4 all angular">
+			<div class="card rounded-0 shadow mb-4">
 			  <img class="card-img-top" src="img/nk.png" alt="Card image">
 			  <div class="card-body">
-			    <h4 class="card-title text-center">NK Interior Designs </h4>
-			    <p class="card-text text-justify">Ms. Nitika Kundu's website who is interior designer by profession. Due to some unavoidable circumstances the work is stopped for some period.</p>
+			    <h4 class="card-title text-center">Nitika Kundu</h4>
+			    <p class="card-text text-justify">Ms. Nitika Kundu's website who is interior designer by profession. Due to some unavoidable circumstances the website is not live now.</p>
 			    <a href="http://nitikakundu.ga" target="_blank" class="btn btn-block btn-primary font-italic view-button">View it!</a>
 			  </div>
 			</div>
@@ -190,45 +197,36 @@
 	<div class="title-box">
 		<h2><span>Wanna</span> Contact ??</h2>
 	</div>
-	<div class="row">
+	<div class="row mb-5">
 		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><i class="fa fa-phone pr-2"></i> (+91) 95294 43534 </p>
+			<p><i class="fa fa-phone pr-2"></i> <br class="d-none d-md-block d-lg-none"> (+91) 95294 43534 </p>
 		</div>
 	
 		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><i class="fa fa-envelope pr-2"></i> utkarshsoni12@gmail.com</p>
+			<p><i class="fa fa-envelope pr-2"></i> <br class="d-none d-md-block d-lg-none"> utkarshsoni12@gmail.com</p>
 		</div>
 	
 		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><i class="fa fa-map-marker pr-2"></i> Chennai, Tamilnadu, India </p>
+			<p><i class="fa fa-map-marker pr-2"></i> <br class="d-none d-md-block d-lg-none"> Chennai, Tamilnadu, India </p>
 		</div>
 	</div>
-	<form method="post" action="sendMsg.php">
-		<div class="row form-group"> 
-			<div class="col-md-8 col-12">
-				<input type="text" name="cname" id="name" class="form-control" placeholder="Name" required minlength="4" maxlength="25" pattern="^[a-zA-Z _\.]*$">
+	<form method="POST" action="https://formspree.io/utkarshsoni12@gmail.com">
+		<div class="row">
+			<div class="col-sm-6 mb-3">
+				<input type="email" name="email" class="form-control"  placeholder="Your email" required>
 			</div>
-		</div>
-		<div class="row form-group"> 
-			<div class="col-md-8 col-12">
-				<input type="email" name="cemail" id="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+	 		<div class="col-sm-6 mb-3">
+				<input type="text" name="text" class="form-control" placeholder="Your Subject">
 			</div>
-		</div>
-		<div class="row form-group"> 
-			<div class="col-md-8 col-12">
-				<input type="text" name="csubject" id="subject" class="form-control" placeholder="Suject" required minlength="4" maxlength="25" pattern="^[a-zA-Z _]*$">
-			</div>
-		</div>
-		<div class="row form-group"> 
-			<div class="col-md-8 col-12">
-				<textarea rows="5" class="form-control" name="cquery" id="query" placeholder="Message" required minlength="25" maxlength="70"></textarea>
-			</div>
-		</div>
-		<div class="row form-group">
-			<div class="col-12">
-				<button type="submit" class="custom-button">Submit</button>
-			</div>
-		</div>
+	 	</div>
+	 	<div class="row mb-3">
+	 		<div class="col-12">
+	 			<textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+	 		</div>
+	 	</div>
+	 	<div class="text-center">
+	  		<button type="submit" class="btn view-button text-white">Send</button>
+	  	</div>
 	</form>
 </div>
 
@@ -238,10 +236,10 @@
   </div>
   <div class="row">
   	<div class="col-md-12 justify-content-center">
-  		<a href="https://www.facebook.com/MrUtkarshSoni"><i class="fab fa-facebook fa-3x social-icon ml-3 mr-3"></i></a>
-  		<a href="https://www.twitter.com/soni_jiiiii"><i class="fab fa-twitter fa-3x social-icon ml-3 mr-3"></i></a>
   		<a href="https://www.linkedin.com/in/utkarshsoni12"><i class="fab fa-linkedin fa-3x social-icon ml-3 mr-3"></i></a>
+  		<a href="https://www.facebook.com/MrUtkarshSoni"><i class="fab fa-facebook fa-3x social-icon ml-3 mr-3"></i></a>
   		<a href="https://www.github.com/seven7hell"><i class="fab fa-github fa-3x social-icon ml-3 mr-3"></i></a>
+  		<a href="https://codepen.io/utkarshsoni"><i class="fab fa-codepen fa-3x social-icon ml-3 mr-3"></i></a>
   	</div>
   </div>
 </div>
@@ -251,9 +249,12 @@
 <script>
 	$(document).ready(function(){ 
 	    $(window).scroll(function(){ 
-	        if ($(this).scrollTop() > 250) { 
+	        if ($(this).scrollTop() > 250) 
+	        { 
 	            $('#scroll').fadeIn(); 
-	        } else { 
+	        } 
+	        else 
+	        { 
 	            $('#scroll').fadeOut(); 
 	        } 
 	    }); 
@@ -262,6 +263,23 @@
 	        return false; 
 	    }); 
 	});
+	$(document).ready(function(){
+    $(".category-button").click(function(){
+    	$(".active").removeClass("active");
+    	$(this).addClass("active");
+        var filterValue = $(this).attr('data-filter');
+        if(filterValue == "all")
+        {
+            $(".all").show("slow");
+        }
+        else
+        {   
+            $(".all").hide("slow");
+            $(".all").filter('.'+filterValue).show("slow");
+        }
+    });
+
+});
 </script>
 
 </body>

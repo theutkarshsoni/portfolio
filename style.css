@@ -72,13 +72,27 @@ ul.achievement-list li:last-child {
 }
 
 .card-img-top{
-  height: 250px;
-  opacity: 0.25;
+  opacity: 0.5;
   transition: opacity 0.5s ease 0s;
 }
 
-.card-img-top:hover{
-  opacity: 0.75;
+.card:hover .card-img-top{
+  opacity: 1;
+}
+
+.category-button{
+  padding: 0.5rem 1rem;
+  background-color: #3498DB;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.category-button:hover{
+  font-weight: 900;
+}
+
+.category-button.active{
+  background-color: #E74C3C;
 }
 
 .view-button{
@@ -88,6 +102,11 @@ ul.achievement-list li:last-child {
 
 .contact-link{
   -webkit-transition-duration: 0.5s;
+}
+
+.form-control:focus {
+  border-color: #3498DB;
+  box-shadow: 0 0 5px #3498DB;
 }
 
 .contact-link:hover{
