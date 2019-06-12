@@ -2,8 +2,17 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
-h1 span{
+span{
   color: #3498DB;
+}
+
+a{
+  color: #000000;
+}
+
+a:hover{
+  color: #3498DB;
+  text-decoration: none;
 }
 
 #scroll {
@@ -32,6 +41,24 @@ h1 span{
   background-color:#E74C3C;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.main-button {
+  border: 2px solid black;
+  -webkit-transition-duration: 0.75s;
+}
+
+.main-button:hover{
+  border: 2px solid #3498DB;
+  background-color: #3498DB;
+  color: #fff !important;
+}
+
 .title-box{
 	padding: 1rem;
 	margin-bottom: 1.5rem;
@@ -42,10 +69,14 @@ h1 span{
 	color: #3498DB;
 }
 
-.skill-box{
+/*.skill-box{
 	padding: 0.5rem;
 	background-color: #3498DB;
 	color: white;
+}*/
+
+.progress-bar{
+  background-color: #3498DB;
 }
 
 .work-box{
@@ -85,23 +116,33 @@ ul.achievement-list li:last-child {
   background-color: #3498DB;
   color: #fff !important;
   cursor: pointer;
+  -webkit-transition-duration: 0.5s;
 }
 
 .category-button:hover{
-  font-weight: 900;
+  background-color: #E74C3C;
+  border-color: #E74C3C;
 }
 
 .category-button.active{
-  background-color: #E74C3C;
+  background-color: #fff !important;
+  border: 1px solid #E74C3C !important;
+  color: #000 !important;
 }
 
-.view-button{
+.custom-button{
   background-color: #3498DB;
   border-color: #3498DB;
+  -webkit-transition-duration: 0.5s;
+}
+
+.custom-button:hover{
+  background-color: #E74C3C;
+  border-color: #E74C3C;
 }
 
 .contact-link{
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 1s;
 }
 
 .form-control:focus {
@@ -120,4 +161,26 @@ ul.achievement-list li:last-child {
 
 .social-icon:hover{
 	color: #3498DB;
+  transition: 1s;
+  transform: rotateY(360deg);
+}
+
+.xyz{
+  background-color: black;
+  color: white !important;
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+}
+
+.abc{
+  color: #3498DB;
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
