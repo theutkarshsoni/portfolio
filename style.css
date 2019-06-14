@@ -26,6 +26,7 @@ a:hover{
   display:none;
   border-radius:50px;
   z-index: 1;
+  -webkit-transition-duration: 0.5s;
 }
 
 #scroll i {
