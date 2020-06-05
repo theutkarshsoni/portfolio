@@ -95,3 +95,7 @@ function closeModal(){
     $(".carousel-control-next").show();
     $("#workModal").modal('hide');
 }
+
+function animateBars(item) {
+    item.classList.toggle("change");
+}
