@@ -1,16 +1,16 @@
-body{
+body {
 	font-family: 'Raleway', sans-serif;
 }
 
-span{
+span {
 	color: #3498DB;
 }
 
-a{
+a {
 	color: #000000;
 }
 
-a:hover{
+a:hover {
 	text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ a:hover{
 	box-shadow: none !important;
 }
 
-.pt-6{
+.pt-6 {
 	padding-top: 4rem;
 }
 
@@ -43,6 +43,18 @@ a:hover{
 .change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.scroll-indicator-container {
+	width: 100%;
+  	height: 5px;
+  	/*background: #ccc;3px solid #3498DB;*/
+}
+
+.scroll-indicator-bar {
+	height: 5px;
+  	background: #3498DB;
+  	width: 0%;
 }
 
 #scroll {
@@ -103,18 +115,18 @@ a:hover{
 	-webkit-transition-duration: 0.75s;
 }
 
-.main-button .fa-arrow-right{
+.main-button .fa-arrow-right {
 	color: #000000 !important;
 	-webkit-transition-duration: 0.75s;
 }
 
-.main-button:hover{
+.main-button:hover {
 	border: 2px solid #3498DB;
 	background-color: #3498DB;
 	color: #fff !important;
 }
 
-.main-button:hover .fa-arrow-right{
+.main-button:hover .fa-arrow-right {
 	color: #fff !important;
     transform: rotateZ(90deg);
 }
@@ -124,35 +136,35 @@ a:hover{
     box-shadow: none;
 }
 
-.nav-link.active{
+.nav-link.active {
 	color: #5596C2 !important;
 }
 
-.title-box{
+.title-box {
 	padding: 1rem;
 	margin-bottom: 1.5rem;
 	text-align: center;
 }
 
-.title-box h2 span{
+.title-box h2 span {
 	color: #3498DB;
 }
 
-.progress-bar{
+.progress-bar {
 	background-color: #3498DB;
 }
 
-.img-fluid:hover{
+.img-fluid:hover {
 	opacity: 0.8;
 	transform: scale(0.75);
 }
 
-.work-box{
+.work-box {
 	border: 1px solid #3498DB;
 	padding: 1rem;
 }
 
-ul{
+ul {
 	list-style-type: square;
 }
 
@@ -174,42 +186,42 @@ ul.achievement-list li:last-child {
 	border: none;
 }
 
-.card-img-top{
+.card-img-top {
 	opacity: 0.5;
 	transition: opacity 0.5s ease 0s;
 }
 
-.card:hover .card-img-top{
+.card:hover .card-img-top {
 	opacity: 1;
 }
 
 
-.category-button:hover{
+.category-button:hover {
 	color: #5596C2;
 }
 
-.category-button.active{
+.category-button.active {
 	background-color: #fff !important;
 	border: 1px solid #5596C2 !important;
 	color: #000 !important;
 }
 
-.custom-text{
+.custom-text {
 	color: #5596C2;
 }
 
-.custom-button{
+.custom-button {
 	background-color: #3498DB;
 	border-color: #3498DB;
 	-webkit-transition-duration: 0.5s;
 }
 
-.custom-button:hover{
+.custom-button:hover {
 	background-color: #5596C2;
 	border-color: #5596C2;
 }
 
-.contact-link{
+.contact-link {
 	-webkit-transition-duration: 1s;
 }
 
@@ -218,22 +230,22 @@ ul.achievement-list li:last-child {
 	box-shadow: 0 0 5px #3498DB;
 }
 
-.contact-link:hover{
+.contact-link:hover {
 	-webkit-transform: scale(1.25);
 }
 
-.social-icon{
+.social-icon {
 	color: #000;
 	transition: color 0.5s ease 0s;
 }
 
-.social-icon:hover{
+.social-icon:hover {
 	color: #3498DB;
 	transition: 1s;
 	transform: rotateY(360deg);
 }
 
-.xyz{
+.xyz {
 	background-color: black;
 	color: white !important;
 	border: 1px solid black;
@@ -244,7 +256,7 @@ ul.achievement-list li:last-child {
 
 }
 
-.abc{
+.abc {
 	color: #3498DB;
 	border: 1px solid black;
 	padding-left: 1rem;
@@ -258,7 +270,7 @@ ul.achievement-list li:last-child {
 	box-shadow: none;
 }
 
-.fil-cat.active{
+.fil-cat.active {
 	color: #fff;
 	background-color: #3498DB;
 }
@@ -286,12 +298,10 @@ ul.achievement-list li:last-child {
 	transition: 0.75s ease;
 }
 
-/* When you mouse over the container, the overlay text will "zoom" in display */
 .tile:hover .overlay {
 	transform: scale(1);
 }
 
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .details {
 	color: #000;
 	font-size: 20px;
