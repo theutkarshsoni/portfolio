@@ -3,61 +3,107 @@ body{
 }
 
 span{
-  color: #3498DB;
+	color: #3498DB;
 }
 
 a{
-  color: #000000;
+	color: #000000;
 }
 
 a:hover{
-  color: #3498DB;
-  text-decoration: none;
+	text-decoration: none;
+}
+
+.btn:focus {
+ 	border-color: none !important;
+	box-shadow: none !important;
+}
+
+.pt-6{
+	padding-top: 4rem;
 }
 
 #scroll {
-  position:fixed;
-  right:1rem;
-  bottom:1rem;
-  cursor:pointer;
-  width:50px;
-  height:50px;
-  background-color:#3498DB;
-  display:none;
-  border-radius:50px;
-  z-index: 1;
-  -webkit-transition-duration: 0.5s;
+	position:fixed;
+	right:1rem;
+	bottom:1rem;
+	cursor:pointer;
+	width:50px;
+	height:50px;
+	background-color:#3498DB;
+	display:none;
+	border-radius:50px;
+	z-index: 1;
+	-webkit-transition-duration: 0.5s;
 }
 
 #scroll i {
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-left: -7px;
-  margin-top: -9px;
-  color: #fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left: -7px;
+	margin-top: -9px;
+	color: #fff;
 }
 
 #scroll:hover {
-  background-color:#E74C3C;
+	background-color:#5596C2;
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-  display: flex;
-  align-items: center;
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+	display: flex;
+	align-items: center;
+}
+
+.typed-cursor {
+	color: #000000;
+	font-size: 1.75rem;
+  	opacity: 1;
+  	-webkit-animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+ 	0% {
+    	opacity: 1;
+  	}
+  	50% {
+	    opacity: 0;
+  	}
+  	100% {
+    	opacity: 1;
+  	}
 }
 
 .main-button {
-  border: 2px solid black;
-  -webkit-transition-duration: 0.75s;
+	border: 2px solid black;
+	-webkit-transition-duration: 0.75s;
+}
+
+.main-button .fa-arrow-right{
+	color: #000000 !important;
+	-webkit-transition-duration: 0.75s;
 }
 
 .main-button:hover{
-  border: 2px solid #3498DB;
-  background-color: #3498DB;
-  color: #fff !important;
+	border: 2px solid #3498DB;
+	background-color: #3498DB;
+	color: #fff !important;
+}
+
+.main-button:hover .fa-arrow-right{
+	color: #fff !important;
+    transform: rotateZ(90deg);
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+	outline: none;
+    box-shadow: none;
+}
+
+.nav-link.active{
+	color: #5596C2 !important;
 }
 
 .title-box{
@@ -70,14 +116,13 @@ a:hover{
 	color: #3498DB;
 }
 
-/*.skill-box{
-	padding: 0.5rem;
-	background-color: #3498DB;
-	color: white;
-}*/
-
 .progress-bar{
-  background-color: #3498DB;
+	background-color: #3498DB;
+}
+
+.img-fluid:hover{
+	opacity: 0.8;
+	transform: scale(0.75);
 }
 
 .work-box{
@@ -85,103 +130,175 @@ a:hover{
 	padding: 1rem;
 }
 
+ul{
+	list-style-type: square;
+}
+
 ul.achievement-list li {
-  border-bottom: 1px solid #ccc;
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-  transition: font-size 0.5s ease 0s, background-color 0.5s ease 0s;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
+	transition: font-size 0.5s ease 0s, background-color 0.5s ease 0s;
 }
 
 ul.achievement-list li:hover {
-  font-size: 20px;
-  background: #3498DB;
-  color: #fff;
+	font-size: 20px;
+	background: #3498DB;
+	color: #fff;
 }
 
 ul.achievement-list li:last-child {
-  border: none;
+	border: none;
 }
 
 .card-img-top{
-  opacity: 0.5;
-  transition: opacity 0.5s ease 0s;
+	opacity: 0.5;
+	transition: opacity 0.5s ease 0s;
 }
 
 .card:hover .card-img-top{
-  opacity: 1;
+	opacity: 1;
 }
 
-.category-button{
-  padding: 0.5rem 1rem;
-  background-color: #3498DB;
-  color: #fff !important;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-}
 
 .category-button:hover{
-  background-color: #E74C3C;
-  border-color: #E74C3C;
+	color: #5596C2;
 }
 
 .category-button.active{
-  background-color: #fff !important;
-  border: 1px solid #E74C3C !important;
-  color: #000 !important;
+	background-color: #fff !important;
+	border: 1px solid #5596C2 !important;
+	color: #000 !important;
+}
+
+.custom-text{
+	color: #5596C2;
 }
 
 .custom-button{
-  background-color: #3498DB;
-  border-color: #3498DB;
-  -webkit-transition-duration: 0.5s;
+	background-color: #3498DB;
+	border-color: #3498DB;
+	-webkit-transition-duration: 0.5s;
 }
 
 .custom-button:hover{
-  background-color: #E74C3C;
-  border-color: #E74C3C;
+	background-color: #5596C2;
+	border-color: #5596C2;
 }
 
 .contact-link{
-  -webkit-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
 }
 
 .form-control:focus {
-  border-color: #3498DB;
-  box-shadow: 0 0 5px #3498DB;
+	border-color: #3498DB;
+	box-shadow: 0 0 5px #3498DB;
 }
 
 .contact-link:hover{
-  -webkit-transform: scale(1.25);
+	-webkit-transform: scale(1.25);
 }
 
 .social-icon{
 	color: #000;
-  transition: color 0.5s ease 0s;
+	transition: color 0.5s ease 0s;
 }
 
 .social-icon:hover{
 	color: #3498DB;
-  transition: 1s;
-  transform: rotateY(360deg);
+	transition: 1s;
+	transform: rotateY(360deg);
 }
 
 .xyz{
-  background-color: black;
-  color: white !important;
-  border: 1px solid black;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+	background-color: black;
+	color: white !important;
+	border: 1px solid black;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 
 }
 
 .abc{
-  color: #3498DB;
-  border: 1px solid black;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+	color: #3498DB;
+	border: 1px solid black;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+.btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.fil-cat.active{
+	color: #fff;
+	background-color: #3498DB;
+}
+
+.tile {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.scale-anm {
+	transform: scale(1);
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: 0.75s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.tile:hover .overlay {
+	transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.details {
+	color: #000;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.more-button {
+	border-radius: 0;
+	border: 1px solid #3498DB;
+	-webkit-transition-duration: 0.5s;
+}
+
+.more-button:hover {
+	background-color: #3498DB;
+	color: #efefef;
+}
+
+.custom-modal {
+	height: 100vh; 
+	margin: 0 auto; 
+	overflow-y: hidden;
+}
+
+.carousel-icon {
+	margin-top: auto !important;
+	background-color: rgba(52, 152, 219, 1);
+	padding: 1rem;
 }

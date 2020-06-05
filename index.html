@@ -1,317 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Utkarsh Soni</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168023584-1"></script>
-  <script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-  	gtag('config', 'UA-168023584-1');
-  </script>
+	<title>Utkarsh Soni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" >
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168023584-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-168023584-1');
+	</script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<div class="jumbotron vertical-center mb-0 rounded-0">
-  <div class="container">
-  	<h1>Hello, I'm <span>Utkarsh Soni</span>.</h1>
-  	<h3 class="mb-4">I'm a front end web developer.</h3> 
-  	<a href="#navbar" class="main-button p-2">View Details <i class="fa fa-arrow-down ml-2"></i></a>
-  </div>
-</div>
+	<div class="jumbotron vertical-center mb-0 rounded-0">
+		<div class="container">
+			<h1>Hello, I'm <span>Utkarsh Soni</span>.</h1>
+			<h3 class="mb-4"><span class="text-body" id="designation"></span><span class="typed-cursor">|</span></h3> 
+			<a href="javascript:void(0)" class="main-button p-2">View Details<i class="fa fa-arrow-right ml-2"></i></a>
+		</div>
+	</div>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark d-none d-sm-block sticky-top" id="navbar">
-    <ul class="navbar-nav justify-content-center">
-		<li class="nav-item ml-5 mr-5">
-			<a class="nav-link" href="#about">ABOUT</a>
-		</li>
-		<li class="nav-item ml-5 mr-5">
-			<a class="nav-link" href="#portfolio">PORTFOLIO</a>
-		</li>
-		<li class="nav-item ml-5 mr-5">
-			<a class="nav-link" href="#contact">CONTACT</a>
-		</li>    
-    </ul>
-</nav>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="border-bottom: 3px solid #3498DB;">
+		<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    	<i class="fas fa-bars fa-lg"></i>
+	  	</button>
+	  	<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+				<li class="nav-item ml-5 mr-5">
+					<a class="nav-link text-uppercase about-button" href="#about">About</a>
+				</li>
+				<li class="nav-item ml-5 mr-5">
+					<a class="nav-link text-uppercase portfolio-button" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item ml-5 mr-5">
+					<a class="nav-link text-uppercase contact-button" href="#contact">Contact</a>
+				</li>    
+		    </ul>
+		</div>
+	</nav>
 
-<div class="container-fluid mt-4 d-block d-sm-none">
-	<div class="row text-center">
-		<div class="col-4">
-			<a href="#about" class="btn btn-outline-primary">About</a>
-		</div>
-		<div class="col-4">
-			<a href="#portfolio" class="btn btn-outline-secondary">Portfolio</a>
-		</div>
-		<div class="col-4">
-			<a href="#contact" class="btn btn-outline-success">Contact</a>
-		</div>
-	</div>
-</div>
+	<a href="#" id="scroll"><i class="fas fa-chevron-up"></i></a>
 
-<a href="#" id="scroll"><i class="fas fa-chevron-up"></i></a>
+	<div class="about-section" id="about">
+		<div class="container pt-6">
+			<div class="title-box">
+				<h3><span class="xyz">About</span><span class="abc">Me</span></h3>
+			</div>
+			<div class="row flex-row-reverse">
+				<div class="col-md-6 my-sm-auto my-3">
+					<div class="rounded-circle" style="overflow: hidden;">
+						<img src="img/mypic.jpg" class="img-fluid" style="transition: transform .5s ease;"> 
+					</div>
+				</div>
+				<div class="col-md-6 my-sm-auto">
+					<p class="font-italic">Born on 22 Dec 1996</p>
+					<h5>I'm a Web Developer for <a href="https://www.liquidstone.in" target="_blank" style="color: #5596C2;">LiquidStone</a> in Chennai, India. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences more like in elegent manner.</h5>
+					<p class="lead">Let's create imagination.</p>
+					<p><i class="fas fa-ellipsis-h fa-2x"></i></p>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>HTML</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:60%; ">60%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>CSS</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:50%">50%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>JavaScript</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:50%">50%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>Bootstrap</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:65%">65%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>PHP</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:45%">45%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>CodeIgniter</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:40%">40%</div>
+							</div>
+						</div>
+					</div>
 
-<div class="container mt-5" id="about">
-	<div class="title-box">
-		<h3><span class="xyz">About</span><span class="abc">Me</span></h3>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<img src="img/mypic.jpg" class="rounded-circle img-fluid mb-4"> 
-		</div>
-		<div class="col-md-6">
-			<div class="text-right">
-				<p class="font-italic">Born on 22 Dec 1996</p>
-				<h5>I'm the Front-End Web Developer for LiquidStone in Chennai, India. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences more like in elegent manner.</h5>
-				<p class="font-italic">Let's create imagination.</p>
-			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:90%;">90%</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>React.js</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:40%">40%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>ReactNative</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:40%">40%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>Node.js</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:35%">35%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>MongoDB</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:30%">30%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>Angular</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:20%">20%</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 col-lg-2">
+							<h6>Ionic</h6>
+						</div>
+						<div class="col-9 col-lg-10">
+							<div class="progress rounded-0">
+								<div class="progress-bar" style="width:20%">20%</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>HTML</h6>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:80%">80%</div>
+		</div>
+	</div>
+
+	<div class="portfolio-section" id="portfolio">
+		<div class="container pt-6">
+			<div class="title-box">
+				<h3><span class="abc">Work</span><span class="xyz">Experience</span></h3>
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-6 mb-3">
+					<div class="p-4 shadow">
+						<div class="work-box">
+							<h5 class="font-weight-bold text-center mb-3">IdealVillage, An Incubatee at CCBUL (Pune)</h5>
+							<span class="float-left"><i class="far fa-calendar-alt"></i> 12.06.2018 - 18.09.2018</span>
+							<span class="float-right font-italic">~ Intern</span><br><br>
+							<ul class="pl-3">
+								<li>Develop front-end web application using HTML, CSS, JavaScript and Bootstrap (Specification/wireframes provided)</li>
+								<li>Development with cross-device compatibility in a graded browser support environment</li>
+								<li>Redesign and develop an existing web sites</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>CSS</h6>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:75%">75%</div>
+				<div class="col-md-6 mb-3">
+					<div class="p-4 shadow">
+						<div class="work-box">
+							<h5 class="font-weight-bold text-center mb-3"> LinuxWorld Informatics Pvt. Ltd. (Jaipur)</h5>
+							<span class="float-left"><i class="far fa-calendar-alt"></i> 07.06.2017 - 07.07.2017</span>
+							<span class="float-right font-italic">~ Trainee</span><br><br>
+							<ul class="pl-3">
+								<li>Set up and Configure Red Hat Linux System | Server | Security Manually and Automate using Python and Provisioned by DevOps (Ansible) with operational Intelligence tool – Splunk</li>
+								<li>Web Development using HTML, CSS, JS, Python, Python CGI & YML</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>JS</h6>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:80%">80%</div>
+			<div class="title-box">
+				<h3><span class="xyz">Work &</span><span class="abc">Projects</span></h3>
+			</div>
+			<div class="row mb-3">
+				<div class="col-12 text-center">
+					<button class="btn fil-cat m-2 active" data-rel="all">All</button>
+			  		<button class="btn fil-cat m-2" data-rel="php">PHP</button>
+			  		<button class="btn fil-cat m-2" data-rel="js">JS</button>
+			  	</div>
+			</div> 
+			<div id="workproject">
+				<div class="row justify-content-center">
+					<div class="col-md-4 my-3 tile scale-anm php all">
+						<img src="img/st.png" alt="" class="w-100 border">
+						<div class="overlay">
+	    					<div class="details">
+	    						<div class="mb-5">
+		    						<h4 id="st_heading">Scarlet Tales</h4>
+		    						<h6><span id="st_tagline">CodeIgniter</span></h6>
+		    					</div>
+	    						<button class="btn more-button" onclick="openModal('st', 8, 'An e-commerce website which sells curated menstrual hygiene kits that contain hygiene and wellness products aimed at alleviating period symptoms.' ,'https://scarlettales.com/');">Know More</button>
+	    					</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-3 tile scale-anm js all">
+						<img src="img/ed.png" alt="" class="w-100 border">
+						<div class="overlay">
+	    					<div class="details">
+	    						<div class="mb-5">
+		    						<h4 id="ed_heading">Eat & Drink</h4>
+		    						<h6><span id="ed_tagline">Node.js</span></h6>
+		    					</div>
+	    						<button class="btn more-button" onclick="openModal('ed', 1, 'A mobile app for ordering food from a chain of restaurants around the city depending upon the cuisine and distance between customer and restaurant.' , null);">Know More</button>
+	    					</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-3 tile scale-anm php all">
+						<img src="img/sc.png" alt="" class="w-100 border">
+						<div class="overlay">
+	    					<div class="details">
+	    						<div class="mb-5">
+		    						<h4 id="sc_heading">Sabari Constructions</h4>
+		    						<h6><span id="sc_tagline">CodeIgniter</span></h6>
+		    					</div>
+	    						<button class="btn more-button" onclick="openModal('sc', 1, 'An internal web platform for company employees to provide their performance throughout the year and the employer to evaluate accordingly and decide appraisal.', 'http://performance.sreesabari.com/');">Know More</button>
+	    					</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-3 tile scale-anm php all">
+						<img src="img/sv.png" alt="" class="w-100 border">
+						<div class="overlay">
+	    					<div class="details">
+	    						<div class="mb-5">
+		    						<h4 id="sv_heading">Saraswathi Vidyalaya</h4>
+		    						<h6><span id="sv_tagline">CodeIgniter</span></h6>
+		    					</div>
+	    						<button class="btn more-button" onclick="openModal('sv', 4, 'A web application for the school staff send push notifications for respective classes and can chat with a particular student\'s parent which are also on the other end of the application.', 'http://svgroup.org.in/');">Know More</button>
+	    					</div>
+						</div>
+					</div>
+					<div class="col-md-4 my-3 tile scale-anm php all">
+						<img src="img/fin.png" alt="" class="w-100 border">
+						<div class="overlay">
+	    					<div class="details">
+	    						<div class="mb-5">
+		    						<h4 id="fin_heading">friendINneed</h4>
+		    						<h6><span id="fin_tagline">PHP</span></h6>
+		    					</div>
+	    						<button class="btn more-button" onclick="openModal('fin', 7, 'A demo web application for providing information about different kinds of blood and donation, to request for blood in an emergency, and for hospitals and blood banks to track stocks of blood.' ,'http://utkarshsoni.epizy.com/friendinneed/');">Know More</button>
+	    					</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>Bootstrap</h6>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:40%">40%</div>
+			<div class="modal fade" id="workModal">
+				<div class="modal-dialog modal-dialog-centered modal-lg custom-modal">
+					<div class="modal-content rounded-0">
+						<div class="modal-body p-0">
+							<div id="workSlide" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner"></div>
+								<a class="carousel-control-prev" href="#workSlide" data-slide="prev" style="width: auto;">
+									<div class="carousel-icon">
+	    								<i class="fa fa-chevron-left fa-lg"></i>
+	    							</div>
+	  							</a>
+	  							<a class="carousel-control-next" href="#workSlide" data-slide="next" style="width: auto;">
+	    							<div class="carousel-icon">
+	    								<i class="fa fa-chevron-right fa-lg"></i>
+	    							</div>
+	  							</a>
+							</div>
+							<div class="p-3">
+								<h4 class="modal-heading"></h4>
+								<h6><span class="modal-tagline"></span></h6>
+								<div class="modal-description"></div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<a href="" class="btn custom-button text-white modal-link mr-auto" target="_blank"><i class="fas fa-external-link-alt mr-1"></i> Visit Site</a>
+							<button type="button" class="btn btn-danger" onclick="closeModal();"><i class="fas fa-times mr-1"></i> Close</button>
+						</div>
 					</div>
 				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>Angular</h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-section" id="contact">
+		<div class="container pt-6">
+			<div class="title-box">
+				<h3><span class="abc">Wanna</span><span class="xyz">Contact ??</span></h3>
+			</div>
+			<div class="row mb-5">
+				<div class="col-xs-12 col-md-4 text-center contact-link">
+					<p><a href="tel:+91 95294 43534"><i class="fa fa-phone pr-2 mb-3"></i> <br> +91 95294 43534 </a></p>
+				</div>
+			
+				<div class="col-xs-12 col-md-4 text-center contact-link">
+					<p><a href="mailto:utkarshsoni12@gmail.com"><i class="fa fa-envelope pr-2 mb-3"></i> <br> utkarshsoni12@gmail.com</a></p>
+				</div>
+			
+				<div class="col-xs-12 col-md-4 text-center contact-link">
+					<p><a href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu" target="_blank"><i class="fa fa-map-marker pr-2 mb-3"></i> <br> Chennai, Tamilnadu, India </a></p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:25%">25%</div>
+			<h5 class="text-center custom-text mb-5">Have a question or want to work together ?</h5>
+			<form class="mb-5" method="POST" action="https://formspree.io/utkarshsoni12@gmail.com">
+				<div class="row">
+			 		<div class="col-sm-6 mb-3">
+						<input type="text" name="name" class="form-control" placeholder="Your Name">
 					</div>
-				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>Node.Js</h6>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:60%">60%</div>
+					<div class="col-sm-6 mb-3">
+						<input type="email" name="email" class="form-control"  placeholder="Your Email" required>
 					</div>
-				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>Ionic</h6>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-9 col-sm-10">
-					<div class="progress rounded-0">
-						<div class="progress-bar" style="width:50%">50%</div>
-					</div>
-				</div>
-				<div class="col-3 col-sm-2 text-right">
-					<h6>Cordova</h6>
-				</div>
-			</div>
+			 	</div>
+			 	<div class="row mb-3">
+			 		<div class="col-12">
+			 			<textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+			 		</div>
+			 	</div>
+			 	<div class="text-center">
+			  		<button type="submit" class="btn custom-button text-white">Submit</button>
+			  	</div>
+			</form>
 		</div>
 	</div>
-</div>
-<div class="container mt-5" id="portfolio">
-	<div class="title-box">
-		<h3><span class="abc">Work</span><span class="xyz">Experience</span></h3>
-	</div>
-	<div class="row mb-5">
-		<div class="col-md-6 mb-3">
-			<div class="p-4 shadow">
-				<div class="work-box">
-					<h5 class="font-weight-bold text-center mb-3">IdealVillage, An Incubatee at CCBUL (Pune)</h5>
-					<span class="float-left"><i class="far fa-calendar-alt"></i> 12.06.2018 - 18.09.2018</span>
-					<span class="float-right font-italic">~ Intern</span><br><br>
-					<p>	- Develop front-end web application using HTML, CSS, JavaScript and Bootstrap (Specification/wireframes provided)<br>
-						- Development with cross-device compatibility in a graded browser support environment<br>
-						- Redesign and develop an existing web sites<br>
-						- Performs other related duties as assigned					
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 mb-3">
-			<div class="p-4 shadow">
-				<div class="work-box">
-					<h5 class="font-weight-bold text-center mb-3"> LinuxWorld Informatics Pvt. Ltd. (Jaipur)</h5>
-					<span class="float-left"><i class="far fa-calendar-alt"></i> 07.06.2017 - 07.07.2017</span>
-					<span class="float-right font-italic">~ Trainee</span><br><br>
-					<p>	- Set up and Configure Red Hat Linux System | Server | Security
-						Manually and Automate using Python and Provisioned by DevOps
-						(Ansible) with operational Intelligence tool – Splunk<br>
-						- Web Development using HTML, CSS, JS, Python, Python CGI &
-						YML
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="title-box">
-		<h3><span class="xyz">Initiated</span><span class="abc">Projects</span></h3>
-	</div>
-	<div class="row text-center">
-		<div class="col-3">
-			<a href="#" class=" active" data-filter="*">All</a>
-		</div>
-		<div class="col-3">
-			<a href="#" class="" data-filter=".bootstrap">Bootstrap</a>
-		</div>
-		<div class="col-3">
-			<a href="#" class="" data-filter=".php">PHP</a>
-		</div>
-		<div class="col-3">
-			<a href="#" class="" data-filter=".angular">Angular</a>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-xs-12 col-sm-4 bootstrap">
-			<div class="card rounded-0 shadow mb-4">
-			  <img class="card-img-top" src="img/fin.png" alt="Card image">
-			  <div class="card-body">
-			    <h3 class="card-title text-center">friend IN need </h3>
-			    <p class="card-text text-justify">friendINneed is a college project. We developed a web application for information about blood donation, availability and donors  around the city.</p>
-			    <a href="http://friendinneed.ga" target="_blank" class="btn btn-block btn-primary font-italic custom-button">View it!</a>
-			  </div>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 php">
-			<div class="card rounded-0 shadow mb-4">
-			  <img class="card-img-top" src="img/rast.png" alt="Card image">
-			  <div class="card-body">
-			    <h3 class="card-title text-center">RAST</h3>
-			    <p class="card-text text-justify">Robotics and Scalability Technology (RAST) is a local startup of Gurgoan. It's a product based company usally robots and crawlers.</p>
-			    <a href="https://www.rast.in" target="_blank" class="btn btn-block btn-primary font-italic custom-button">View it!</a>
-			  </div>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 angular">
-			<div class="card rounded-0 shadow mb-4">
-			  <img class="card-img-top" src="img/nk.png" alt="Card image">
-			  <div class="card-body">
-			    <h3 class="card-title text-center">Nitika Kundu</h3>
-			    <p class="card-text text-justify">Ms. Nitika Kundu's website who is interior designer by profession. Due to some unavoidable circumstances the website is not live now.</p>
-			    <a href="http://nitikakundu.ga" target="_blank" class="btn btn-block btn-primary font-italic custom-button">View it!</a>
-			  </div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="container mt-5 mb-5" id="contact">
-	<div class="title-box">
-		<h3><span class="abc">Wanna</span><span class="xyz">Contact ??</span></h3>
-	</div>
-	<div class="row mb-5">
-		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><a href="tel:+91 95294 43534"><i class="fa fa-phone pr-2 mb-3"></i> <br> +91 95294 43534 </a></p>
-		</div>
-	
-		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><a href="mailto:utkarshsoni12@gmail.com"><i class="fa fa-envelope pr-2 mb-3"></i> <br> utkarshsoni12@gmail.com</a></p>
-		</div>
-	
-		<div class="col-xs-12 col-md-4 text-center contact-link">
-			<p><a href="http://maps.google.co.uk/maps?q=13.034086, 80.251384" target="_blank"><i class="fa fa-map-marker pr-2 mb-3"></i> <br> Chennai, Tamilnadu, India </a></p>
-		</div>
-	</div>
-	<h5 class="text-center mb-5"><i>Have a question or want to work together ?</i></h5>
-	<form method="POST" action="https://formspree.io/utkarshsoni12@gmail.com">
-		<div class="row">
-	 		<div class="col-sm-6 mb-3">
-				<input type="text" name="name" class="form-control" placeholder="Your Name">
-			</div>
-			<div class="col-sm-6 mb-3">
-				<input type="email" name="email" class="form-control"  placeholder="Your Email" required>
-			</div>
-	 	</div>
-	 	<div class="row mb-3">
-	 		<div class="col-12">
-	 			<textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
-	 		</div>
-	 	</div>
-	 	<div class="text-center">
-	  		<button type="submit" class="btn custom-button text-white">Submit</button>
+
+	<div class="jumbotron py-5 mb-0 text-center rounded-0">
+		<div class="title-box">
+	  		<h3><span class="xyz">Social</span><span class="abc">Media</span></h3>
 	  	</div>
-	</form>
-</div>
+	  	<div class="row">
+	  		<div class="col-md-12 justify-content-center">
+	  			<a href="https://www.linkedin.com/in/utkarshsoni12" target="_blank"><i class="fab fa-linkedin fa-3x social-icon ml-3 mr-3"></i></a>
+	  			<a href="https://www.facebook.com/MrUtkarshSoni" target="_blank"><i class="fab fa-facebook fa-3x social-icon ml-3 mr-3"></i></a>
+	  			<a href="https://www.github.com/theutkarshsoni" target="_blank"><i class="fab fa-github fa-3x social-icon ml-3 mr-3"></i></a>
+	  			<a href="https://codepen.io/utkarshsoni" target="_blank"><i class="fab fa-codepen fa-3x social-icon ml-3 mr-3"></i></a>
+	  		</div>
+	  	</div>
+	  	<p class="mt-5 mb-0">Finding my resume ? <a href="Utkarsh_Soni.pdf" target="_blank" style="color: #5596C2;" download>Here</a> it is.</p>
+	</div>
 
-<div class="jumbotron mb-0 text-center rounded-0">
-  <div class="title-box">
-  	<h3><span class="xyz">Social</span><span class="abc">Media</span></h3>
-  </div>
-  <div class="row">
-  	<div class="col-md-12 justify-content-center">
-  		<a href="https://www.linkedin.com/in/utkarshsoni12" target="_blank"><i class="fab fa-linkedin fa-3x social-icon ml-3 mr-3"></i></a>
-  		<a href="https://www.facebook.com/MrUtkarshSoni" target="_blank"><i class="fab fa-facebook fa-3x social-icon ml-3 mr-3"></i></a>
-  		<a href="https://www.github.com/seven7hell" target="_blank"><i class="fab fa-github fa-3x social-icon ml-3 mr-3"></i></a>
-  		<a href="https://codepen.io/utkarshsoni" target="_blank"><i class="fab fa-codepen fa-3x social-icon ml-3 mr-3"></i></a>
-  	</div>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script>
-	$(document).ready(function(){ 
-	    $(window).scroll(function(){ 
-	        if ($(this).scrollTop() > 250) 
-	        { 
-	            $('#scroll').fadeIn(); 
-	        } 
-	        else 
-	        { 
-	            $('#scroll').fadeOut(); 
-	        } 
-	    }); 
-	    $('#scroll').click(function(){ 
-	        $("html, body").animate({ scrollTop: 0 }, 600); 
-	        return false; 
-	    }); 
-	});
-</script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
