@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #3498DB; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5596C2; 
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -333,4 +353,19 @@ ul.achievement-list li:last-child {
 	margin-top: auto !important;
 	background-color: rgba(52, 152, 219, 1);
 	padding: 1rem;
+}
+
+.circles {
+	-webkit-animation: upDown 1s infinite alternate;
+    animation: upDown 1s infinite alternate;
+}
+@-webkit-keyframes upDown {
+    0% { 
+    	transform: translateY(0);
+    	color: #3498DB;
+    }
+    100% { 
+    	transform: translateY(-10px); 
+    	color: #fff;
+    }
 }
