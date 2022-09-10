@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	var i = 0;
-	var txt = "I'm a full stack web developer.";
+	var txt = "I'm a full stack developer.";
 	function typeWriter() {
   		if (i < txt.length) {
     		document.getElementById("designation").innerHTML += txt.charAt(i);
