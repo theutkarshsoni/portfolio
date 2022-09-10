@@ -68,7 +68,6 @@ a:hover {
 .scroll-indicator-container {
 	width: 100%;
   	height: 5px;
-  	/*background: #ccc;3px solid #3498DB;*/
 }
 
 .scroll-indicator-bar {
@@ -158,6 +157,10 @@ a:hover {
 
 .nav-link.active {
 	color: #5596C2 !important;
+}
+
+.progress-bar {
+	width: 0;
 }
 
 .title-box {

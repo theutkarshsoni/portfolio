@@ -64,6 +64,13 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+	var delay = 500;
+	$(".progress-bar").each(function(i){
+    	$(this).delay( delay ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
+	});
+});
+
 function openModal(tag, count, description, link){
     $(".modal .modal-heading").html($("#"+tag+"_heading").text());
     $(".modal .modal-tagline").html($("#"+tag+"_tagline").text());
